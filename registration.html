@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        /*Location functions here*/
+        </script>
+</head>
+    <style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        height:100%;
+    }
+    body{
+        font-family: 'Segoe UI', sans-serif;;
+        font-size: 1rem;
+        line-height: 1.6;
+        height: 100%;
+    }
+    .wrap {
+        width: 150%;
+        height: 120%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fafafa;
+    }
+    img {
+      text-align: center;
+      width: 200px;;
+    }
+    .login-form{
+        width: 350px;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        padding: 2rem;
+        background: #ffffff;
+    }
+    .form-input{
+        background: #fafafa;
+        border: 1px solid #eeeeee;
+        padding: 12px;
+        width: 100%;
+    }
+    .form-group{
+        margin-bottom: 1rem;
+    }
+    .form-button{
+        background: #69d2e7;
+        border: 1px solid #ddd;
+        color: #ffffff;
+        padding: 10px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    .form-button:hover{
+        background: #69c8e7;
+    }
+    .form-header{
+        text-align: center;
+        margin-bottom : 2rem;
+    }
+    .form-footer{
+        text-align: center;
+    }
+    .social-btn button.twitter-btn, .social-btn button.facebook-btn {
+      width: 100%;
+      font-size: 18px;
+      margin: 0px 0px 10px;
+  }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form class="login-form" action="">
+            <div class="form-header">
+              <img src="https://www.shisigas.co.za/img/logo.png">
+                <h3>Registration Form</h3>
+                <p>Please fill all required fields(*)</p>
+            </div>
+            <!--Email Input-->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Mobile No.">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Delivery Address"(*)>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Create Password. xct0854567erf">
+            </div>
+            <!--Password Input-->
+            <!--<div class="form-group">
+                <input type="password" class="form-input" placeholder="password">
+            </div>-->
+            <!--Login Button-->
+            <div class="form-group">
+                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions
+            </div>
+            <div class="form-group">
+                <button class="form-button" type="submit">Submit</button><br>
+            </div>
+            
+            <div class="form-footer">
+            Already have an account? <a href="#">Sign In</a>
+            </div>
+        </form>
+    </div><!--/.wrap-->
+</body>
+</html>
